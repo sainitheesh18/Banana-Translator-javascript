@@ -6,11 +6,12 @@
     <title>Translator</title>
     <style>
         textarea{
-            width: 70%;
+            width: 80%;
             height: 10vh;
-            margin: 1rem;
+            margin: auto;
             display: block;
-            padding: 1rem;
+            padding-bottom:  3rem;
+            border-color:blue;
         }
         #output{
             border: 1px solid black;
@@ -19,15 +20,36 @@
             margin: 1rem;
             padding: 1rem;
         }
+        header{
+            border: 1px ;
+            height: 10vh;
+            margin: 1rem;
+            background-color:yellow;
+            padding-bottom: 2.5rem;
+        }
+        footer{
+            background-color: brown;
+        }
         
     </style>
 </head>
 <body>
-    <textarea id="text-input" placeholder="Enter your text here,we will convert it"></textarea>
-    <section style="padding-left: 20rem;padding-top: 2rem;">
-    <button id="btn-translate">Translate</button></section>
-    <div style="font-size: larger;">Output will be displayed here 👇</div>
-    <div id="output"></div>
+    <header>
+        <p style="text-align: center;font-size: xx-large;">Banana Translator</p>
+    </header>
+
+    <section style="padding-top: 2rem;">
+    <textarea id="text-input" placeholder="Enter your text here,we will convert it"></textarea></section>
+
+    <section style="padding-top: 2rem;">
+    <button id="btn-translate" style="background-color: blueviolet;padding: 0.5rem 1rem;font-size:large;margin-left: auto;margin-right: auto;display: block;">Translate</button></section>
+
+    <div style="font-size: larger;padding-left: 9rem;padding-top: 2rem;padding-bottom: 2rem;">Output will be displayed here 👇</div>
+    <div id="output" style="display: block;margin: auto;width: 70%;height: 12vh;"></div>
+
+    <footer>
+        <p style="text-align: center;padding: 3rem;color: whitesmoke;">About: This was a fun translation which converts the given text to Banana language. Thankyou for visiting!</p>
+    </footer>
     <script src="app.js" type="text/javascript"></script>
 </body>
 </html>
